@@ -18,6 +18,6 @@ for year in 2018 2017 2016 2015 2014 2013; do
 	psql -U politics -h db.fivetwentyseven.com politics -c "\COPY pa_debts FROM '"$year"/debt_"$year".txt' WITH CSV;"
 	psql -U politics -h db.fivetwentyseven.com politics -c "\COPY pa_expenditures FROM '"$year"/expense_"$year".txt' WITH CSV;"
 	psql -U politics -h db.fivetwentyseven.com politics -c "\COPY pa_filers FROM '"$year"/filer_"$year".txt' WITH CSV;"
-	psql -U politics -h db.fivetwentyseven.com politics -c "\COPY pa_receipts FROM '"$year"/receipt_"$year".txt' WITH CSV;"
+	psql -U politics -h db.fivetwentyseven.com politics -c "\COPY pa_other_receipts FROM '"$year"/receipt_"$year".txt' WITH CSV;"
     rm -rf $year
 done

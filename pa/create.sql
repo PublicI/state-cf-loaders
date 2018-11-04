@@ -98,9 +98,9 @@ CREATE TABLE IF NOT EXISTS pa_filers (
 GRANT ALL ON TABLE pa_filers TO redash_default;
 GRANT ALL ON TABLE pa_filers TO politics;
 
-DROP TABLE pa_receipts;
+DROP TABLE pa_other_receipts;
 
-CREATE TABLE IF NOT EXISTS pa_receipts (	
+CREATE TABLE IF NOT EXISTS pa_other_receipts (	
 	filerid text,
 	eyear integer, 
 	cycle integer,
@@ -115,5 +115,5 @@ CREATE TABLE IF NOT EXISTS pa_receipts (
 	recamt decimal(12,2)
 );
 
-GRANT ALL ON TABLE pa_receipts TO redash_default;
-GRANT ALL ON TABLE pa_receipts TO politics;
+GRANT ALL ON TABLE pa_other_receipts TO redash_default;
+GRANT ALL ON TABLE pa_other_receipts TO politics;
