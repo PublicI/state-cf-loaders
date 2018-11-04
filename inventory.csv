@@ -1,0 +1,51 @@
+state,link,notes,bulk download
+AK,https://aws.state.ak.us/ApocReports/Campaign/,asp on-demand export,FALSE
+AL,http://fcpa.alabamavotes.gov/PublicSite/DataDownload.aspx,zips of csvs,TRUE
+AR,https://financial-disclosures.sos.arkansas.gov/#/dataDownload,csvs,TRUE
+AZ,https://seethemoney.az.gov/Reporting/Landing,"new site, JSON API needs entity ID to produce transaction level detail",FALSE
+CA,https://www.sos.ca.gov/campaign-lobbying/cal-access-resources/raw-data-campaign-finance-and-lobbying-activity/,Civic Data Coalition pre-processes this: https://www.californiacivicdata.org/,TRUE
+CO,http://tracer.sos.colorado.gov/PublicSite/DataDownload.aspx,zips of csvs,TRUE
+CT,http://seec.ct.gov/eCrisHome/eCRIS_Search/PreviousYears,csvs,TRUE
+DE,https://cfrs.elections.delaware.gov/,on-demand export,FALSE
+FL,https://dos.myflorida.com/elections/candidates-committees/campaign-finance/campaign-finance-database/,can coax export of contributors,FALSE
+GA,http://media.ethics.ga.gov/search/Campaign/Campaign_ByName.aspx,can coax export,FALSE
+HI,http://ags.hawaii.gov/campaign/cc/view-searchable-data/,Socrata,TRUE
+IA,https://data.iowa.gov/Government/Iowa-Campaign-Contributions-Received/smfg-ds7h,Socrata,TRUE
+ID,https://sos.idaho.gov/elect/finance/downloads.html,xlsx,TRUE
+IL,ftp://ftp.elections.il.gov/CampDisclDataFiles,"ftp, needs username/password, see propublica's makefile: https://github.com/propublica/ilcampaigncash/blob/master/Makefile",TRUE
+IN,http://campaignfinance.in.gov/PublicSite/Reporting/DataDownload.aspx,zips of csvs,TRUE
+KS,https://www.kssos.org/elections/campaign_finance/cfr_online.aspx,asp on-demand export,FALSE
+KY,http://www.kref.state.ky.us/krefsearch/,asp on-demand export,FALSE
+LA,http://ethics.la.gov/CampFinanHome.aspx,asp on-demand export,FALSE
+MA,http://www.ocpf.us/Data,access mdb files,TRUE
+MD,https://www.campaignfinance.maryland.gov/,on-demand export,FALSE
+ME,https://www.mainecampaignfinance.com/#/dataDownload,api export for csvs,TRUE
+MI,https://miboecfr.nictusa.com/cfr/dumpall/cfrdetail/,txt files,TRUE
+MN,https://cfb.mn.gov/reports-and-data/self-help/data-downloads/campaign-finance/,csvs,TRUE
+MO,https://mec.mo.gov/mec/Campaign_Finance/Searches.aspx,"asp, may require search by name?",FALSE
+MS,https://cfportal.sos.ms.gov/online/portal/cf/page/cf-search/Portal.aspx?#clear=1,on-demand export,FALSE
+MT,https://camptrackext.mt.gov/CampaignTracker/public/,on-demand export,FALSE
+NC,https://cf.ncsbe.gov/CFTxnLkup/,on-demand export,FALSE
+ND,https://vip.sos.nd.gov/cf/search/cfsearch.aspx,asp have to specify a name,FALSE
+NE,http://www.nadc.nebraska.gov/ccdb/search.cgi,name search,FALSE
+NH,http://cfs.sos.nh.gov/Public/ReceiptsList,search by name?,FALSE
+NJ,https://www.elec.nj.gov/publicinformation/contrib_quickdownload.htm,zips of txts,TRUE
+NM,https://www.cfis.state.nm.us/media/CFIS_Data_Download.aspx,"asp on-demand export, but comparatively good",TRUE
+NV,https://www.nvsos.gov/SOSCandidateServices/AnonymousAccess/CEFDSearchUU/Search.aspx#contribution_search,asp on-demand export,FALSE
+NY,https://www.elections.ny.gov/CFViewReports.html#DBaseFiles,ascii delimited text files,TRUE
+OH,https://www6.sos.state.oh.us/ords/f?p=119:73::101677873215429::::,csvs,TRUE
+OK,https://apps.ok.gov/ethics/public/login.php,zip of csvs,TRUE
+OR,https://secure.sos.state.or.us/orestar/gotoPublicTransactionSearch.do,search,FALSE
+PA,https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Resources/Pages/FullCampaignFinanceExport.aspx,zips of csvs,TRUE
+RI,http://ricampaignfinance.com/RIPublic/Contributions.aspx,search,FALSE
+SC,http://apps.sc.gov/PublicReporting/Index.aspx,search by name,FALSE
+SD,https://sdcfr.sdsos.gov/Search/Search.aspx,asp search by committee,FALSE
+TN,https://apps.tn.gov/tncamp-app/public/cesearch.htm,search by name,FALSE
+TX,https://www.ethics.state.tx.us/dfs/search_CF.htm,zip of csvs,TRUE
+UT,https://disclosures.utah.gov/Search/PublicSearch,search by name,FALSE
+VA,http://cfreports.sbe.virginia.gov/Report/Index/110477,individual reports accessible as xml; waldo used to provide a bulk download,FALSE
+VT,https://campaignfinance.sec.state.vt.us/Public/ExpensesList,search,FALSE
+WA,https://www.pdc.wa.gov/browse/open-data,Socrata,TRUE
+WI,https://cfis.wi.gov/Public/Registration.aspx?page=FiledReports,asp search,FALSE
+WV,https://cfrs.wvsos.gov/#/dataDownload,zips of csvs,TRUE
+WY,https://www.wycampaignfinance.gov/WYCFWebApplication/GSF_SystemConfiguration/SearchContributions.aspx,asp search,FALSE
