@@ -2,11 +2,11 @@
 pipeline:
   name: nj-campaign-finance-contributions-load
 transform:
-  image: publicintegrity/state-cf-loaders:00579f08f10b
+  image: publicintegrity/state-cf-loaders:d9c341188b84
   cmd:
   - bash
   stdin:
-  - ./nj/transforms/load.sh /pfs/append/
+  - ./nj/transforms/load.sh /pfs/append
   secrets:
     - name: pachyderm-postgres-politics-auth
       env_var: PGHOST

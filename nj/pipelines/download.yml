@@ -2,7 +2,7 @@
 pipeline:
   name: nj-campaign-finance-contributions-download
 transform:
-  image: publicintegrity/state-cf-loaders:00579f08f10b
+  image: publicintegrity/state-cf-loaders:b236ef53f4a0
   cmd:
   - bash
   stdin:
