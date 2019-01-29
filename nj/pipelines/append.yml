@@ -1,0 +1,18 @@
+---
+pipeline:
+  name: nj-campaign-finance-contributions-append
+transform:
+  image: publicintegrity/state-cf-loaders:00579f08f10b
+  cmd:
+  - bash
+  stdin:
+  - ./nj/transforms/append.sh /pfs/download/ /pfs/out/
+parallelism_spec:
+  constant: 1
+standby: true
+input:
+  pfs:
+    name: download
+    repo: nj-campaign-finance-contributions-download
+    glob: /*
+    lazy: true

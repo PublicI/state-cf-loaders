@@ -1,0 +1,31 @@
+---
+pipeline:
+  name: nj-campaign-finance-contributions-load
+transform:
+  image: publicintegrity/state-cf-loaders:00579f08f10b
+  cmd:
+  - bash
+  stdin:
+  - ./nj/transforms/load.sh /pfs/append/
+  secrets:
+    - name: pachyderm-postgres-politics-auth
+      env_var: PGHOST
+      key: pghost
+    - name: pachyderm-postgres-politics-auth
+      env_var: PGDATABASE
+      key: pgdatabase
+    - name: pachyderm-postgres-politics-auth
+      env_var: PGUSER
+      key: pguser
+    - name: pachyderm-postgres-politics-auth
+      env_var: PGPASSWORD
+      key: pgpassword
+parallelism_spec:
+  constant: 1
+standby: true
+input:
+  pfs:
+    name: append
+    repo: nj-campaign-finance-contributions-append
+    glob: /*
+    lazy: true
