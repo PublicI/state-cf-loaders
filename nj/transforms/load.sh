@@ -1,8 +1,8 @@
 #!/bin/bash
 
-psql -f create.sql
+psql -f $(dirname "$BASH_SOURCE")/create.sql
 
-for file in $(find $1*.txt); do
+for file in $(find $1/ -name "*.txt"); do
     base=$(basename $file .txt)
 
     psql -c "START TRANSACTION;
