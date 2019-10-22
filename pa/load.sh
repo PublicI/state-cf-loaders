@@ -1,7 +1,7 @@
 #!/bin/bash
 
 psql -f create.sql
-for year in 2018 2017 2016 2015 2014 2013; do
+for year in 2019 2018 2017 2016 2015 2014 2013; do
     wget -N "https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Resources/Documents/"$year".zip"
     unzip -o $year".zip"
     mkdir $year
