@@ -27,9 +27,6 @@ CREATE TABLE IF NOT EXISTS pa_contributions (
 	contdesc text
 );
 
-GRANT ALL ON TABLE pa_contributions TO redash_default;
-GRANT ALL ON TABLE pa_contributions TO politics;
-
 DROP TABLE pa_debts;
 
 CREATE TABLE IF NOT EXISTS pa_debts (
@@ -47,9 +44,6 @@ CREATE TABLE IF NOT EXISTS pa_debts (
 	dbtdesc text
 );
 
-GRANT ALL ON TABLE pa_debts TO redash_default;
-GRANT ALL ON TABLE pa_debts TO politics;
-
 DROP TABLE pa_expenditures;
 
 CREATE TABLE IF NOT EXISTS pa_expenditures (
@@ -66,9 +60,6 @@ CREATE TABLE IF NOT EXISTS pa_expenditures (
 	expamt decimal(12,2),
 	expdesc text
 );
-
-GRANT ALL ON TABLE pa_expenditures TO redash_default;
-GRANT ALL ON TABLE pa_expenditures TO politics;
 
 DROP TABLE pa_filers;
 
@@ -95,9 +86,6 @@ CREATE TABLE IF NOT EXISTS pa_filers (
 	inkind decimal(12,2)
 );
 
-GRANT ALL ON TABLE pa_filers TO redash_default;
-GRANT ALL ON TABLE pa_filers TO politics;
-
 DROP TABLE pa_other_receipts;
 
 CREATE TABLE IF NOT EXISTS pa_other_receipts (	
@@ -114,6 +102,3 @@ CREATE TABLE IF NOT EXISTS pa_other_receipts (
 	recdate text,
 	recamt decimal(12,2)
 );
-
-GRANT ALL ON TABLE pa_other_receipts TO redash_default;
-GRANT ALL ON TABLE pa_other_receipts TO politics;
